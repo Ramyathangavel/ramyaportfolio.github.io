@@ -41,7 +41,7 @@ body {
 }
 
 ul {
-	padding: 0;
+	padding: 0 10px;
 	margin: 0;
 }
 
@@ -49,6 +49,7 @@ ul li {
 	list-style: disc;
 	font-size: 17px;
 	line-height: 1.59;
+	color: #0c120c;
 }
 
 a { 
@@ -629,6 +630,7 @@ button:focus {
 	margin-bottom: 15px;
 	padding: 25px 10px;
 	width: 100%;
+	border-radius: 10px;
 }
 
 .mu-service-icon-box {
@@ -653,6 +655,19 @@ button:focus {
 	letter-spacing: 0.5px;
 }
 
+/* -------- */
+/* Research */
+/* -------- */
+.mu-research{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.mu-research p{
+	font-size: 14px;
+}
+
 
 /*--------------------*/
 /* PORTFOLIO */
@@ -663,7 +678,7 @@ button:focus {
 	background-color: #f8f8f8;
 	display: inline;
 	float: left;
-	width: 100%;
+	width: 100%;height: max-content;
 }
 
 .mu-portfolio-area {
@@ -734,10 +749,11 @@ button:focus {
 }
 
 .mu-item-thumbonail{
-	display: inline;
+	align-items: center;
 	float: left;
-	overflow: hidden;
 	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
 
 .mu-item-thumbonail img{
@@ -745,6 +761,7 @@ button:focus {
 	        transform: scale(1);
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
+	object-fit: contain;
 }
 
 .filtr-item:hover .mu-item-thumbonail img {
@@ -929,7 +946,120 @@ button:focus {
 .mu-testimonial-slide .slick-dots li button::before {
 	display: none;
 }
+/* BLOGS */
+/* ----- */
+.mu-testimonial-header span {
+	display: block;
+    margin: 20px auto;
+    width: 50px;
+    height: 5px;
+    background-color: #f5f0f6;
+}
 
+#mu-blogs {
+	background-image: url("assets/images/testimonials-bg.jpeg");
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: inline;
+	float: left;
+	position: relative;
+	width: 100%;
+	padding-bottom: 40px;
+	padding-top: 4rem;
+}
+
+#mu-blogs::before {
+	background: rgba(0,0,0,0.9);
+	bottom: 0;
+	content: '';
+	left: 0;
+	top: 0;
+	right: 0;
+	position: absolute;
+	opacity: 0.84;
+}
+.blog-container {
+    height: auto;
+    width: 100%;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-card-item {
+    width: 300px;
+    margin: 1rem 2rem;
+    position: relative;
+    border-radius: 8px;
+    background: #f5f0f6;
+    padding-bottom: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 20px 40px rgba(87, 84, 84, 0.328);
+}
+
+.blog-card-item:hover {
+    transform: rotate(1deg);
+    box-shadow: 0 20px 40px rgba(16, 14, 14, 0.5);
+}
+
+.image {
+    width: 300px;
+    height: 200px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+    transition: all 0.5s;
+    background-size: cover;
+    background-position: center center;
+}
+
+.blog-image1 {
+    background-image: url('crypto.jpg');
+}
+
+.blog-image2 {
+    background-image: url('aiml.jpg');
+}
+
+.blog-image3 {
+    background-image: url('hacking.jpg');
+}
+
+.blog-content {
+    padding: 1rem;
+}
+
+.blog-title {
+    margin: 1rem 0;
+    color: #0c120c;
+    font-size: 1.4rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 2rem;
+    font-family: 'Imprima', sans-serif;
+    color: #000;
+}
+
+.blog-button {
+    color: #0c120c;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 18px;
+    text-decoration: none;
+    background-color: #90d6ff;
+	transition: all .3s ease-in;
+}
+
+.blog-button:hover {
+    color: #90d6ff;
+    background-color: #0c120c;
+}
 
 /*--------------------*/
 /* CONTACT US */
@@ -1219,8 +1349,11 @@ button:focus {
 
 	.navbar-default .navbar-collapse, 
 	.navbar-default .navbar-form {
-		background-color: rgba(0,0,0,0.8);
+		background-color: #90d6ff;
 		text-align: center;
+		border-color: #90d6ff;
+		border: 1px solid #000;
+        border-radius: 10px;
 	}
 
 	.navbar-default .mu-menu li a {
