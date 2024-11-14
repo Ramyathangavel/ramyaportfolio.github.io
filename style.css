@@ -1186,7 +1186,7 @@ p {
 	color: #0c120c;
 }
 
-.mu-contact-top-single p{
+.mu-contact-top-single p>a{
 	margin-bottom: 0;
 	color: #f7f7f7;
 }
