@@ -41,7 +41,7 @@ body {
 }
 
 ul {
-	padding: 0;
+	padding: 0 10px;
 	margin: 0;
 }
 
@@ -49,6 +49,7 @@ ul li {
 	list-style: disc;
 	font-size: 17px;
 	line-height: 1.59;
+	color: #0c120c;
 }
 
 a { 
@@ -107,7 +108,7 @@ img {
 code {
 	background-color: #ee6e73;
 	border-radius: 2px;
-	color: #fff;
+	color: #0c120c;
 	padding: 2px 4px;
 }
 
@@ -131,7 +132,7 @@ kbd {
 	background-color: #ddd;
 	padding: 4px 6px;
 	border-radius: 2px;
-	color: ;
+	color: #ccc;
 }
 
 address {
@@ -200,8 +201,8 @@ button:focus {
 .mu-primary-btn {
 	background-color: transparent;
 	border-radius: 4px;
-	border: 2px solid #ffffff;
-	color: #fff;
+	border: 2px solid #0c120c;
+	color: #0c120c;
 	display: inline-block;
 	font-size: 14px;
 	font-weight: 700;
@@ -213,14 +214,14 @@ button:focus {
 
 .mu-primary-btn:hover,
 .mu-primary-btn:focus {
-	background-color: #fff;
+	background-color: #0c120c;
 }
 
 .mu-send-msg-btn {
 	border-radius: 4px;
 	border: 1px solid #888;
 	background-color: transparent;
-	color: #555;
+	color: #90d6ff;
 	font-size: 13px;
 	font-weight: 600;
 	letter-spacing: 1px;
@@ -234,7 +235,8 @@ button:focus {
 
 .mu-send-msg-btn:hover,
 .mu-send-msg-btn:focus {
-	background-color: #fff;
+	color: #0c120c;
+	background-color: #90d6ff;
 }
 
 
@@ -259,7 +261,7 @@ button:focus {
 .navbar-default .navbar-brand, 
 .navbar-default .navbar-brand:hover, 
 .navbar-default .navbar-brand:focus {
-	color: #fff;
+	color: #0c120c;
 	font-size: 35px;
 	font-family: 'Poppins', sans-serif;
 	margin-top: 0;
@@ -295,7 +297,7 @@ button:focus {
 }
 
 .navbar-default .mu-menu li a {
-	color: #fff;
+	color: #0c120c;
 	font-size: 15px;
 	font-weight: 400;
 	padding: 0;
@@ -305,7 +307,7 @@ button:focus {
 }
 
 .navbar-default .mu-menu li a::after {
-	background-color: #fff;
+	background-color: #0c120c;
 	content: '';
 	height: 2px;
 	width: 100%;
@@ -322,7 +324,7 @@ button:focus {
 .navbar-default .navbar-nav > .active > a:focus, 
 .navbar-default .navbar-nav > .active > a:hover {
 	background-color: transparent;
-	color: #fff;
+	color: #0c120c;
 }
 
 .navbar-default .mu-menu li a:hover::after,
@@ -351,13 +353,13 @@ button:focus {
 	display: inline;
 	float: left;
 	width: 100%;
-	padding: 28% 10%;
+	padding: 18% 10%;
 	text-align: center;
 }
 
 .mu-featured-area h1 {
 	font-size: 60px;
-	color: #fff;
+	color: #0c120c;
 	font-weight: 700;
 	margin-bottom: 0;
 	line-height: 1;
@@ -377,7 +379,7 @@ button:focus {
 
 .mu-featured-slider p,
 #typed {
-	color: #fff;
+	color: #0c120c;
 	font-size: 30px;
 	font-weight: 300;
 }
@@ -385,7 +387,7 @@ button:focus {
 .mu-featured-slider span,
 #typed span,
 .typed-cursor {
-	color: #fff;
+	color: #0c120c;
 	font-size: 30px;
 	font-weight: 600;
 }
@@ -398,7 +400,7 @@ button:focus {
 }
 
 .mu-featured-content p{
-	color: #fff;
+	color: #0c120c;
 }
 
 .mu-featured-content a{
@@ -434,7 +436,7 @@ button:focus {
 }
 
 .mu-heading-title {
-	color: #1c1b1b;
+	color: #fff;
 	margin-bottom: 15px;
 	position: relative;
 }
@@ -488,7 +490,7 @@ button:focus {
 .mu-pro-percentage {
 	display: inline-block;
 	padding: 5px 0;
-	color: #fff;
+	color: #0c120c;
 }
 
 .mu-pro-bar .progressbar {
@@ -504,7 +506,7 @@ button:focus {
 	position: absolute;
 	top: 0;
 	left: 48%;
-	color: #fff;
+	color: #0c120c;
 }
 
 .mu-social-media{
@@ -531,6 +533,33 @@ button:focus {
 	transition: all 0.5s;
 	
 }
+.mu-social-media a:hover {
+	border: 1px solid #333;
+	background-color: #333;
+}
+.mu-head-link a {
+	border-radius: 50%;
+	display: inline-block;
+	font-size: 20px;
+	border: 1px solid #333;
+	width: 35px;
+	height: 35px;
+	line-height: 32px;
+	text-align: center;
+	margin: 5px 5px;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	
+}
+.mu-head-link a:hover {
+	border-radius: 50%;
+	display: inline-block;
+	font-size: 20px;
+	border: 1px solid #333;
+	background-color: #333;
+	color: #f5f0f6;
+	
+}
 
 .mu-resume-btn {
 	margin-top: 30px;
@@ -541,11 +570,15 @@ button:focus {
 	letter-spacing: 1px;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
+	background-color: #fff;
+	border: 1px solid #0c120c;
+	color: #0c120c;
 }
 
 .mu-resume-btn:hover,
 .mu-resume-btn:focus {
-	color: #fff;
+	color: #0c120c;
+	border: 1px solid #90d6ff;
 }
 
 
@@ -576,7 +609,7 @@ button:focus {
 }
 
 .mu-heading-title {
-	color: #1c1b1b;
+	color: #fff;
 	margin-bottom: 15px;
 	position: relative;
 }
@@ -597,6 +630,7 @@ button:focus {
 	margin-bottom: 15px;
 	padding: 25px 10px;
 	width: 100%;
+	border-radius: 10px;
 }
 
 .mu-service-icon-box {
@@ -617,8 +651,21 @@ button:focus {
 .mu-service-content-single p {
 	font-size: 14px;
 	margin-bottom: 0;
-	color: #555;
+	color: #0c120c;
 	letter-spacing: 0.5px;
+}
+
+/* -------- */
+/* Research */
+/* -------- */
+.mu-research{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.mu-research p{
+	font-size: 14px;
 }
 
 
@@ -631,7 +678,7 @@ button:focus {
 	background-color: #f8f8f8;
 	display: inline;
 	float: left;
-	width: 100%;
+	width: 100%;height: max-content;
 }
 
 .mu-portfolio-area {
@@ -649,7 +696,7 @@ button:focus {
 }
 
 .mu-heading-title {
-	color: #1c1b1b;
+	color: #0c120c;
 	margin-bottom: 15px;
 	position: relative;
 }
@@ -660,6 +707,7 @@ button:focus {
 	width: 75px;
 	display: inline-block;
 	margin-bottom: 20px;
+	
 }
 
 .mu-portfolio-content{
@@ -692,7 +740,7 @@ button:focus {
 	top: 16px;
 	right: 16px;
 	bottom: 16px;
-	color: #fff;
+	color: #0c120c;
 	padding-top: 25%;
 	text-align: center;
 	-webkit-transition: all 0.5s;
@@ -701,10 +749,11 @@ button:focus {
 }
 
 .mu-item-thumbonail{
-	display: inline;
+	align-items: center;
 	float: left;
-	overflow: hidden;
 	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
 
 .mu-item-thumbonail img{
@@ -712,6 +761,7 @@ button:focus {
 	        transform: scale(1);
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
+	object-fit: contain;
 }
 
 .filtr-item:hover .mu-item-thumbonail img {
@@ -746,7 +796,7 @@ button:focus {
 .mu-filter-imglink:hover,
 .mu-filter-link:focus,
 .mu-filter-imglink:focus {
-	background-color: #fff;
+	background-color: #0c120c;
 } 
 
 
@@ -757,7 +807,7 @@ button:focus {
 }
 
 .mu-simplefilter li {
-	color: #555;
+	color: #0c120c;
 	cursor: pointer;
 	display: inline-block;
 	padding: 5px;
@@ -771,9 +821,75 @@ button:focus {
 
 .mu-simplefilter li:hover,
 .mu-simplefilter li.active {
-    border-color: #fff;
+    border-color: #0c120c;
 }
 
+/* ------------ */
+/* PUBLICATIONS */
+/* ------------ */
+#mu-publications{
+	background-color: #f7f7f7;
+	display: inline;
+	float: left;
+	width: 100%;
+	padding-bottom: 2rem;
+}
+
+.pub-container{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+}
+
+.card-container{
+    height: 180px;
+    width: 24rem;
+    border-radius: 10px;
+    position: relative;
+    transform-style: preserve-3d;
+    justify-content: center;
+    align-items: center;
+    transition: all .8s ease;
+    margin: 2rem;
+}
+.card-container:hover{
+    transform: rotateY(180deg);
+}
+
+.front-card{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 6px;
+    backface-visibility: hidden;
+	
+}
+
+.back-card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 1rem;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: #0c120c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.back-card p, .back-card a{
+	color: #f5f0f6;
+	cursor: pointer;
+	padding: 0 10px;
+}
 
 /*--------------------*/
 /* CLIENT TESTIMONIALS */
@@ -816,7 +932,7 @@ button:focus {
 }
 
 .mu-testimonials-area h2 {
-	color: #fff;
+	color: #f5f0f6;
 	text-align: center;
 }
 
@@ -837,9 +953,9 @@ button:focus {
 }
 
 .mu-testimonial-slide li .mu-quote-icon {
-	color: #fff;
+	color: #f5f0f6;
 	font-size: 16px;
-	border: 1px solid #fff;
+	border: 1px solid #f5f0f6;
 	border-radius: 50%;
 	margin-bottom: 20px;
 	width: 40px;
@@ -848,20 +964,20 @@ button:focus {
 }
 
 .mu-testimonial-slide li p{
-	color: #fff;
+	color: #f5f0f6;
 	font-size: 16px;
 }
 
 .mu-ct-name {
 	 margin-bottom: 5px; 
-	color: #fff;
+	color: #f5f0f6;
 	line-height: 1;
 	text-transform: uppercase;
 	margin-top: 30px;
 }
 
 .mu-ct-title {
-	color: #fff;
+	color: #f5f0f6;
 	font-size: 14px;
 }
 
@@ -875,7 +991,7 @@ button:focus {
 }
 
 .mu-testimonial-slide .slick-dots li button {
-	background-color: #fff;
+	background-color: #f5f0f6;
 	border-radius: 50%;
 	height: 10px;
 	padding: 0;
@@ -896,14 +1012,127 @@ button:focus {
 .mu-testimonial-slide .slick-dots li button::before {
 	display: none;
 }
+/* BLOGS */
+/* ----- */
+.mu-testimonial-header span {
+	display: block;
+    margin: 20px auto;
+    width: 50px;
+    height: 5px;
+    background-color: #f5f0f6;
+}
 
+#mu-blogs {
+	background-image: url("assets/images/testimonials-bg.jpeg");
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: inline;
+	float: left;
+	position: relative;
+	width: 100%;
+	padding-bottom: 40px;
+	padding-top: 4rem;
+}
+
+#mu-blogs::before {
+	background: rgba(0,0,0,0.9);
+	bottom: 0;
+	content: '';
+	left: 0;
+	top: 0;
+	right: 0;
+	position: absolute;
+	opacity: 0.84;
+}
+.blog-container {
+    height: auto;
+    width: 100%;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-card-item {
+    width: 300px;
+    margin: 1rem 2rem;
+    position: relative;
+    border-radius: 8px;
+    background: #f5f0f6;
+    padding-bottom: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 20px 40px rgba(87, 84, 84, 0.328);
+}
+
+.blog-card-item:hover {
+    transform: rotate(1deg);
+    box-shadow: 0 20px 40px rgba(16, 14, 14, 0.5);
+}
+
+.image {
+    width: 300px;
+    height: 200px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+    transition: all 0.5s;
+    background-size: cover;
+    background-position: center center;
+}
+
+.blog-image1 {
+    background-image: url('crypto.jpg');
+}
+
+.blog-image2 {
+    background-image: url('aiml.jpg');
+}
+
+.blog-image3 {
+    background-image: url('hacking.jpg');
+}
+
+.blog-content {
+    padding: 1rem;
+}
+
+.blog-title {
+    margin: 1rem 0;
+    color: #0c120c;
+    font-size: 1.4rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 2rem;
+    font-family: 'Imprima', sans-serif;
+    color: #000;
+}
+
+.blog-button {
+    color: #0c120c;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 18px;
+    text-decoration: none;
+    background-color: #90d6ff;
+	transition: all .3s ease-in;
+}
+
+.blog-button:hover {
+    color: #90d6ff;
+    background-color: #0c120c;
+}
 
 /*--------------------*/
 /* CONTACT US */
 /*--------------------*/
 
 #mu-contact {
-	background-color: #fff;
+	background-color: #0c120c;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -954,11 +1183,12 @@ button:focus {
 	line-height: 70px;
 	border-radius: 50%;
 	margin-bottom: 15px;
-	color: #fff;
+	color: #0c120c;
 }
 
 .mu-contact-top-single p{
 	margin-bottom: 0;
+	color: #f7f7f7;
 }
 
 
@@ -975,7 +1205,7 @@ button:focus {
 .mu-contact-form .form-group input {
 	background: transparent;
 	border-radius: 4px;
-	color: #333;
+	color: #f8f8f8;
 	font-size: 15px;
 	border: 1px solid #888;
 	height: 45px;
@@ -986,14 +1216,14 @@ button:focus {
 	background: transparent;
 	border: 1px solid #888;
 	border-radius: 4px;
-	color: #333;
+	color: #f8f8f8;
 	font-size: 18px;
 	padding: 10px;
 	height: 190px;
 }
 
 .mu-contact-form .form-control:focus {
-	background-color: #fff;
+	background-color: #0c120c;
     outline: 0;
     box-shadow: none;    
 } ©
@@ -1031,7 +1261,7 @@ button:focus {
 
 #form-messages {
 	margin-bottom: 10px;
-    background-color: #fff;
+    background-color: #0c120c;
 }
 
 .success {
@@ -1171,7 +1401,7 @@ button:focus {
 
 @media (max-width: 767px) {
 	.navbar-default .navbar-toggle {
-		border-color: #fff;
+		border-color: #0c120c;
 	}
 
 	.navbar-default .navbar-toggle:hover,
@@ -1180,13 +1410,16 @@ button:focus {
 	}
 
 	.navbar-default .navbar-toggle .icon-bar {
-		background-color: #fff;
+		background-color: #0c120c;
 	}
 
 	.navbar-default .navbar-collapse, 
 	.navbar-default .navbar-form {
-		background-color: rgba(0,0,0,0.8);
+		background-color: #90d6ff;
 		text-align: center;
+		border-color: #90d6ff;
+		border: 1px solid #000;
+        border-radius: 10px;
 	}
 
 	.navbar-default .mu-menu li a {
